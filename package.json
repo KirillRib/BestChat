@@ -1,0 +1,32 @@
+{
+  "name": "best-chat",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "connect": "^3.6.6",
+    "connect-mongo": "^2.0.1",
+    "cookie-parser": "~1.4.3",
+    "crypto": "^1.0.1",
+    "debug": "~2.6.9",
+    "ejs": "~2.5.7",
+    "ejs-locals": "^1.0.2",
+    "error-handler": "^1.0.0",
+    "errorhandler": "^1.5.0",
+    "express": "^4.16.3",
+    "express-session": "^1.15.6",
+    "favicon": "0.0.2",
+    "http-errors": "~1.6.2",
+    "iconf": "0.0.4",
+    "mongodb": "^3.0.4",
+    "mongoose": "^5.0.11",
+    "morgan": "~1.9.0",
+    "nconf": "^0.10.0",
+    "pug": "^2.0.3",
+    "serve-favicon": "^2.4.5",
+    "winston": "^2.4.1"
+  }
+}
