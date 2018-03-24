@@ -2,9 +2,9 @@ var User = require('models/user').User;
 var HttpError = require('error').HttpError;
 var AuthError = require('models/user').AuthError;
 var async = require('async');
+var log = require('libs/log')(module);
 
 exports.get = function(req, res) {
-  console.log("login");
   res.render('login');
 };
 
@@ -13,7 +13,6 @@ exports.post = function(req, res, next) {
   var password = req.body.password;
 
   
-  console.log(username, password);
 
   User.authorize(username, password, function(err, user) {
     if (err) {
@@ -26,7 +25,7 @@ exports.post = function(req, res, next) {
 
     req.session.user = user._id;
     res.send({});
-
+    log.info("Пользователь",username,"авторизирован");
   });
 
 };
