@@ -1,5 +1,5 @@
 process.env.NODE_ENV='development';
-// set NODE_PATH=.
+NODE_PATH='.';
 var express = require('express');
 var path = require('path');
 var http = require('http');
