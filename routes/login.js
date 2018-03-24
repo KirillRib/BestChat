@@ -4,11 +4,11 @@ var AuthError = require('models/user').AuthError;
 var async = require('async');
 
 exports.get = function(req, res) {
+  console.log("login");
   res.render('login');
 };
 
 exports.post = function(req, res, next) {
-  console.log("!");
   var username = req.body.username;
   var password = req.body.password;
 

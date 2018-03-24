@@ -2,6 +2,13 @@ var checkAuth = require('middleware/checkAuth');
 
 module.exports = function(app) {
 
+  app.get('/logout', function(req, res) {
+    console.log("logout");
+    req.session.destroy();
+    res.redirect('/');
+  });
+
+
   app.get('/', require('./frontpage').get);
 
   app.get('/login', require('./login').get);

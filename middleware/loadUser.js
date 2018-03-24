@@ -2,7 +2,6 @@ var User = require('models/user').User;
 
 module.exports = function(req, res, next) {
   req.user = res.locals.user = null;
-  console.log(req.session.user);
   
   if (!req.session.user) return next();
 

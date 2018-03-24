@@ -1,3 +1,5 @@
 exports.get = function(req, res) {
-  res.render('chat', {user: req.user});
+  console.log("chat");
+  //res.render('chat', {user: req.user});
+  res.redirect('/');
 };

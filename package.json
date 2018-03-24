@@ -21,6 +21,7 @@
     "favicon": "0.0.2",
     "http-errors": "~1.6.2",
     "iconf": "0.0.4",
+    "jquery": "^3.3.1",
     "mongodb": "^3.0.4",
     "mongoose": "^5.0.11",
     "morgan": "~1.9.0",
